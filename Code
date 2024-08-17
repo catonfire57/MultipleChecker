@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    cout<<"Max limit of numbers? = ";
+    int n;
+    cin>>n;
+    cout<<"Which number's multiple to leave? = ";
+    int d;
+    cin>>d;
+    for (int i=1;i<=n;i++) {
+        
+        if (i%d==0) {
+            continue;
+        }
+        
+        cout<<i<<endl;
+    }
+    
+    return 0;
+}
